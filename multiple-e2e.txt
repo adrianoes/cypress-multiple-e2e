@@ -1,0 +1,11 @@
+crio uma pasta dentro da unidade c
+abro a pasta do projeto pelo terminal
+executo o comando "yarn init" pra criar um projeto node
+executo o comando "yarn add cypress -D" para instalar o cypress com dependências de desenvolvimento
+executo o comando "code ." para abrir o projeto usando o vs code
+execute o comando "yarn cypress open" para abrir a interface gráfica do cypress e aceite as permissões do firewall
+
+na interface gráfica do cypress, clique em e2e para criar um novo projeto. Você verá uma tela com os arquivos que serão criados, como massa de dados e configuração. Clique em continue.
+selecione o navegador electron, que é padrão do cypress, e clique em Start E2E Testing in Electron
+Clique em Scaffold example specs para que você possa criar uma pasta com testes e2e referentes a exemplos básicos, que podem ser úteis no seu projeto. Deopis, clique em Okay.
+
