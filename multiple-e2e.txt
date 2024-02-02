@@ -9,3 +9,49 @@ na interface gráfica do cypress, clique em e2e para criar um novo projeto. Voc�
 selecione o navegador electron, que é padrão do cypress, e clique em Start E2E Testing in Electron
 Clique em Scaffold example specs para que você possa criar uma pasta com testes e2e referentes a exemplos básicos, que podem ser úteis no seu projeto. Deopis, clique em Okay.
 
+
+copiei a pasta .github do curso do cypress para o meu projeto particular do cypress e editei o arquivo de workflow como o papito mostra no curso
+
+___________________________________________
+
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  cypress-electron-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run E2E tests
+      run: yarn cypress run
+
+____________________________________________________________________
+
+copiei as configurações do .gitignore do fork para o meu pessoal
+copiei a pasta .GitHub do fork e colei no meu pessoal
+
+naveguei até a pasta do projeto pelo terminal e executei os comandos
+git init
+git status
+git add .
+git commit -m "commit do meu projeto de multiple-e2e"
+
+fui no meu perfil do git hub e criei um repositório
+
+git remote add origin git@meu_repositorio/playwright-mark.git (comando sugerido pelo GitHub após a criação do repositório)
+
+
+git branch -M main
+
+se der erro do nome do repositorio então redefina pra outro ou para o mesmo com o comando 
+
+git remote set-url origin git@github.com:username/repository.git
+
+
+git push -u origin main
